@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient.Fragments.FirstAidVideosFragment">
+
+
+    <TextView
+
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/an_error_occured_please_try_again_later"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/loadingGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_centerInParent="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textSize="28sp"
+            android:textColor="@color/primary_dark"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <ProgressBar
+
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:orientation="vertical"
+            android:id="@+id/firstAidRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</RelativeLayout>

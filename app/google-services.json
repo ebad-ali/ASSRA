@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "385504768837",
+    "firebase_url": "https://assra-7b20e.firebaseio.com",
+    "project_id": "assra-7b20e",
+    "storage_bucket": "assra-7b20e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:385504768837:android:bbaea5c0e7b320f5",
+        "android_client_info": {
+          "package_name": "assra.bahria.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "385504768837-vqd013s080bh91ckdcg89kcnpbg9vafb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "assra.bahria.fyp",
+            "certificate_hash": "41a9fd7bdb29c84c171e3a71a53f486272d8445c"
+          }
+        },
+        {
+          "client_id": "385504768837-3qrq8jf2qogce3c6ss727802hfkbblll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW3G1NgzCCWyq_I7GpyeOc0NUsvI5KZRw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "385504768837-3qrq8jf2qogce3c6ss727802hfkbblll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

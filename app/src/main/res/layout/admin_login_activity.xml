@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Activities.AdminLoginActivity">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/hero"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:lines="1"
+                android:text="@string/admin_login"
+                android:textColor="@color/primary_dark"
+                android:textSize="24sp"
+                android:textStyle="bold"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/userNameTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_username"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_dark"
+                app:errorEnabled="true">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/usernameInputEditTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/md_black_1000"
+                    android:textColorHint="@color/md_black_1000"
+                    app:backgroundTint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_your_password"
+                android:orientation="vertical"
+                android:textColorHint="@color/primary_dark"
+                app:errorEnabled="true">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/passwordInputEditTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/md_black_1000"
+                    android:textColorHint="@color/md_black_1000"
+                    app:backgroundTint="@color/colorPrimaryDark" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/login"
+                android:textColor="@color/md_white_1000"
+                app:backgroundTint="@color/colorPrimary" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/accountSignUpActionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/dont_have_an_account_signup"
+                android:textColor="@color/primary_dark" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient.Activities.CallAmbulanceActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/hero"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request will be sent in"
+            android:gravity="center_horizontal"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_10"
+           android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="@color/primary_dark"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seconds"
+            android:gravity="center_horizontal"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/cancelRequestButton"
+            android:layout_width="match_parent"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/cancel"
+            android:layout_height="50dp"
+            app:backgroundTint="@color/colorPrimary"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

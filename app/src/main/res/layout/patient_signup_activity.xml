@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Patient.Activities.PatientSignupActivity">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <include layout="@layout/hero" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:textSize="24sp"
+            android:text="@string/patient_signup"
+            android:textColor="@color/primary_dark"
+            android:textStyle="bold"
+
+            />
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/emailTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:hint="@string/enter_your_email"
+            android:textColorHint="@color/primary_dark"
+            app:errorEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/emailInputEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorHint="@color/md_black_1000"
+                android:inputType="textEmailAddress"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:hint="@string/enter_your_password"
+            android:textColorHint="@color/primary_dark"
+            app:errorEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/passwordInputEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorHint="@color/md_black_1000"
+                android:inputType="textPassword"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:hint="@string/enter_your_name"
+            android:textColorHint="@color/primary_dark"
+            app:errorEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/nameInputEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorHint="@color/md_black_1000"
+                android:inputType="textPersonName"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/contactTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:hint="@string/enter_your_phone_number"
+            android:textColorHint="@color/primary_dark"
+            app:errorEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/contactInputEditTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/md_black_1000"
+                android:textColorHint="@color/md_black_1000"
+                android:inputType="numberDecimal"
+                app:backgroundTint="@color/colorPrimaryDark"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/sign_up"
+            app:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/md_white_1000"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</ScrollView>

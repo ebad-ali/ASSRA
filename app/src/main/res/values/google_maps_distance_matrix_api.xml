@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="google_maps_distance_matrix_api_key" translatable="false"
+        >AIzaSyDW3G1NgzCCWyq_I7GpyeOc0NUsvI5KZRw</string>
+
+</resources>
